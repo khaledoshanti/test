@@ -45,7 +45,7 @@ while players_current_squares[0] < 100 and players_current_squares[1] < 100:
     number = mydice()
     players_current_squares[1] += number
     print('the dice rolled', number)
-
+    players_current_squares[1] += number
         
     if players_current_squares[1] == squares[0]["penalty"] or players_current_squares[1] == squares[1]["penalty"]:
         players_current_squares[1] -= 10
@@ -57,7 +57,7 @@ while players_current_squares[0] < 100 and players_current_squares[1] < 100:
         print('player 2 is in', players_current_squares[1])
     
     
-    if players_current_squares[0] >= 100:
+    if players_current_squares[1] >= 100:
         print('player 2 is in', players_current_squares[1])
         print("player 2 is the winner")
         break
